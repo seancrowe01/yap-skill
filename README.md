@@ -116,8 +116,11 @@ templates/audience-map.md    who the content is for
 templates/offer.md           what the content must stay congruent with
 templates/rep-log.md         the log
 templates/edit-checklist.md  your edit order and sound rules
-examples/worked-rep.md       one illustrative rep, invented account
+examples/worked-rep.md       one illustrative rep that got through, invented account
+examples/worked-rep-skipped.md  one that died at the gate, and what she did instead
 ```
+
+Read the skipped one first. Most reps end there, and that is the skill working.
 
 ## Testing it
 

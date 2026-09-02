@@ -80,7 +80,10 @@ creator's normal, and there is nothing to copy.
    - The 100 viewer test on the first line: of 100 people in the centre, how many feel it is
      about them? A first line that passes names who it is for and what they get.
 3. The gate question, in the user's own words: "Do I have a take on this that is different,
-   that I am excited about?" No take = skip, next candidate.
+   that I am excited about?" No take = skip, next candidate. When a topic is skipped, write
+   it in the Skipped table of `yap/rep-log.md` with the reason and the one thing that would
+   unlock it (usually a receipt the user does not have yet). Check that table at the start
+   of every Stage 1; a skipped topic whose unlock condition is now met comes back as a rep.
 4. Receipt check: is there a real, cleared piece of proof (a screenshot, a number the creator
    can show, a client who has consented)? No receipt = the topic waits. On a small account,
    proof has to be in the video, because nobody will take it from the profile.
