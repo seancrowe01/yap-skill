@@ -78,6 +78,11 @@ creator's normal, and there is nothing to copy.
 - Pull the analysed source's sections: name, job, start and end seconds, proportion of the
   video, and the source's own sentences for each section. Only 5x or better analysed sources
   may donate structure. Name every section kept and every section switched.
+- **No research tool?** Ask the user for the source video's transcript with timestamps (any
+  transcription app will do). Claude sections it: where the hook ends, where each idea starts,
+  where the close begins, with seconds and proportions. Claude names the sections by their job
+  (cold open, receipt, rule, door) and quotes the source's own sentences under each. That is
+  the scaffold. The 5x rule still applies; the user supplies the views and the channel normal.
 - List the receipts and artefacts with file paths. Verify every number against the file it
   comes from before it enters the scaffold. A wrong number in a posted video is the cautionary
   tale: check it now, not after.
