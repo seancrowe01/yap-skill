@@ -44,8 +44,10 @@ Then create a `yap/` folder in your project root from the templates:
 mkdir -p your-project/yap/feedback && cp yap-skill/templates/*.md your-project/yap/
 ```
 
-Fill in `yap/audience-map.md` and `yap/offer.md` before your first rep. The skill will refuse
-to run with them blank, on purpose.
+Fill in `yap/audience-map.md` and `yap/offer.md` before your first rep. The skill stops if
+either file is missing. It does not check whether they are filled in, so do it: a blank
+audience map gives the take test nothing to aim at, and a blank offer gives the fact gate
+nothing to check against.
 
 ## Run
 
@@ -87,6 +89,12 @@ templates/rep-log.md         the log
 templates/edit-checklist.md  your edit order and sound rules
 examples/worked-rep.md       one illustrative rep, invented account
 ```
+
+## Testing it
+
+If something breaks, or the skill does something the rules above say it should not (writes a
+line for you, cheerleads, skips a stage), open an issue on this repo. Paste the stage you were
+on and what it said. That is the most useful thing a tester can send.
 
 ## Licence
 
