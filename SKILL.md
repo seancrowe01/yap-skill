@@ -75,7 +75,10 @@ video with millions of views and near-zero likes or comments is usually paid or 
 not organic. Say so and move on.
 
 Only a video at 5x or more of its channel's normal may donate structure. Below that it is the
-creator's normal, and there is nothing to copy.
+creator's normal, and there is nothing to copy. Never offer to "proceed without a proven
+outlier" or run a rep "as a shot in the dark". When the user has no outlier, the only two
+doors are: bring another video with its numbers, or paste a list to pick from. A rep with no
+source is not a rep, it is guessing with extra steps.
 
 ## Progress and pace
 
@@ -132,11 +135,14 @@ to what they actually have.
    - Sandcastles tools present: call video details on the URL. If it is already analysed,
      the sections and transcript are free. If not, say "analysing costs 1 credit" and wait
      for an explicit yes before calling analyze.
-   - No Sandcastles: run the helper that ships with this skill,
-     `python scripts/get-transcript.py <url>`. It downloads the video, transcribes it with
-     timestamps, prints the caption and the transcript, and deletes the media. It needs
-     `yt-dlp`, `ffmpeg` and a `GROQ_API_KEY` in the environment (Groq has a free tier). If
-     the script reports a missing tool, show the user the install line it prints.
+   - No Sandcastles: run the helper yourself, straight away, with the link the user pasted:
+     `python <this skill's folder>/scripts/get-transcript.py <url>`. Do not ask the user to
+     download anything. The script does the download, transcribes with timestamps, prints
+     the caption, likes, comments and transcript, then deletes the media. It needs `yt-dlp`,
+     `ffmpeg` and a `GROQ_API_KEY` in the environment (Groq has a free tier). If it reports
+     a missing tool, show the user the install line it prints and ask them to run that one
+     line. Views are usually not exposed on the link; ask the user for views and the channel
+     normal after the transcript is in, not before.
    - Neither works: ask the user to paste the transcript with timestamps from any free
      transcription app, plus the view count and the channel's normal.
 
