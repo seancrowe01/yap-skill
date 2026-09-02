@@ -42,7 +42,7 @@ Continue line by line until the user has every section.
 
 ## Stage 4: Gate report
 
-All thirteen gates listed with pass or fail and the reason. Two fails on the first pass: text
+All fourteen gates listed with pass or fail and the reason. Two fails on the first pass: text
 hook did not match spoken hook word for word, and the destination was two options instead of
 one. User fixes both. Filming unblocked.
 

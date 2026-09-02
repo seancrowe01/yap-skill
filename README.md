@@ -19,7 +19,8 @@ Seven stages, one rep per chat:
    receipts, every number checked against its file. No lines.
 3. **Write.** You write, section by section. Claude grades each line against a fixed clarity
    bar and tells you exactly which sentence fails and why.
-4. **Gate report.** Thirteen pass or fail gates. Failures block filming.
+4. **Gate report.** Fourteen pass or fail gates, including a slop check for AI writing
+   habits that creep into hand-written lines. Failures block filming.
 5. **Film card.** Prompter, three takes, setup.
 6. **Edit build.** Element by element, sound last, volume rules that override everything.
 7. **Log.** The rep goes in the log. Sunday numbers re-aim next week.
@@ -78,6 +79,7 @@ Rule either way: only a video at 5x or more of its channel's normal can donate s
 - Every number is traced to a file before it goes in a video.
 - On a small account the proof has to be in the video, not on the profile.
 - Sound effects last, quiet, and never on the last word of a line.
+- Three or more AI writing tells in a script fails the gate, hand-written or not.
 
 ## Files
 
