@@ -116,6 +116,10 @@ to what they actually have.
      saying? The answers must come from the user. The skill never supplies the take.
    - The 100 viewer test on the first line: of 100 people in the centre, how many feel it is
      about them? A first line that passes names who it is for and what they get.
+   - **Never suggest an angle**, not even as an aside, an example, or "the X bit might
+     transfer, framed as Y". Naming a framing is writing the take. Say what in the source is
+     structural and could transfer (its turn position, its proof placement, its shape), and
+     ask the user what they would say there. The framing is theirs or it does not exist.
 3. The gate question, in the user's own words: "Do I have a take on this that is different,
    that I am excited about?" No take = skip, next candidate. When a topic is skipped, write
    it in the Skipped table of `yap/rep-log.md` with the reason and the one thing that would
