@@ -47,8 +47,18 @@ to get them, in order of preference:
 1. **A research tool with an MCP connection** (for example Sandcastles). Reads are usually
    free; any call that spends a credit needs the user's explicit yes on the number, every time.
    Verify you are in the right workspace before reading.
-2. **Manual.** The user pastes a list: video link, views, and the channel's usual views. Claude
+2. **Manual.** The user pastes a list: video link, views, and the channel's normal. Claude
    computes the multiple. No multiple, no topic.
+
+**Channel normal** is the median views of the channel's last 20 to 30 posts, with the
+outliers themselves left out. Not the average: one big video drags the average up and hides
+the next one. Not the last three posts: too few to mean anything. If the user cannot get 20
+posts of data, say the multiple is unreliable and treat the topic as unproven.
+
+Two false-outlier traps to name when you see them: a channel with almost no baseline (a few
+hundred views a post) will show 100x on a video that did 20K, which is not a signal; and a
+video with millions of views and near-zero likes or comments is usually paid or reposted,
+not organic. Say so and move on.
 
 Only a video at 5x or more of its channel's normal may donate structure. Below that it is the
 creator's normal, and there is nothing to copy.

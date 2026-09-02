@@ -98,4 +98,4 @@ on and what it said. That is the most useful thing a tester can send.
 
 ## Licence
 
-Use it, change it, share it. Attribution appreciated, not required.
+MIT. Use it, change it, share it. See `LICENSE`.
