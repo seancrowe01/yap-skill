@@ -77,6 +77,28 @@ not organic. Say so and move on.
 Only a video at 5x or more of its channel's normal may donate structure. Below that it is the
 creator's normal, and there is nothing to copy.
 
+## Progress and pace
+
+Open every stage with one line saying where the user is: "Stage 3 of 7, section 2 of 6." At
+the start of a first rep, say once: the first rep takes about an hour, the fifth about twenty
+minutes, and a skip that ends at the gate question is a rep done properly, not a failure.
+
+## Stage 0: SETUP (only when the files are blank)
+
+If `yap/audience-map.md` or `yap/offer.md` still has empty tables, do not send the user away
+to fill them. Interview them. Ask the questions the template asks, three at a time, in plain
+words, and write their answers into the file in their words, formatted to the template. That
+is filling in a form, not writing a script. Push back once when an answer is vague ("who
+exactly, say one person") and take the second answer. When the centre, one receipt row and
+the lane sentence are in, say "that is enough to start" and move to Stage 1. The rest fills
+in over the first few reps.
+
+**The beginner receipt.** If the user holds no client results at all, say so plainly and set
+the rule for them: the receipt is their own real number, shown honestly, however small. "I
+have 400 followers and here is what happened when I did this" is true, provable, and goes on
+screen. The rule that proof must be in the video does not move. What counts as proof scales
+to what they actually have.
+
 ## Stage 1: TOPIC
 
 1. Pull the user's watchlist or pasted list, last 3 months, sorted by outlier multiple. Present
@@ -104,9 +126,22 @@ creator's normal, and there is nothing to copy.
 6. **Reference breakdown, when the user brings a video.** If the user pastes a link, a
    transcript, or "this one did really well", teach them why it broke out before anything
    else happens. This is the one place the skill explains rather than asks, because a creator
-   who can read an outlier stops needing the skill. Work only from what is in front of you
-   (transcript, caption, numbers the user gives); mark anything you cannot see as [GAP].
-   Cover, in this order, in plain words:
+   who can read an outlier stops needing the skill.
+
+   **Getting the transcript from a link**, in this order:
+   - Sandcastles tools present: call video details on the URL. If it is already analysed,
+     the sections and transcript are free. If not, say "analysing costs 1 credit" and wait
+     for an explicit yes before calling analyze.
+   - No Sandcastles: run the helper that ships with this skill,
+     `python scripts/get-transcript.py <url>`. It downloads the video, transcribes it with
+     timestamps, prints the caption and the transcript, and deletes the media. It needs
+     `yt-dlp`, `ffmpeg` and a `GROQ_API_KEY` in the environment (Groq has a free tier). If
+     the script reports a missing tool, show the user the install line it prints.
+   - Neither works: ask the user to paste the transcript with timestamps from any free
+     transcription app, plus the view count and the channel's normal.
+
+   Work only from what is in front of you (transcript, caption, numbers the user gives); mark
+   anything you cannot see as [GAP]. Cover, in this order, in plain words:
    - **The multiple.** Views against the channel's normal. Below 5x, say it is the channel's
      normal and there is nothing to learn from it beyond the topic.
    - **Who it was for.** The one viewer the first line names, and how many of 100 in that
@@ -142,6 +177,32 @@ creator's normal, and there is nothing to copy.
   the path given, now, not at a later stage. A wrong number in a posted video is the
   cautionary tale: check it now, not after. If a file is missing, the scaffold waits.
 - Deliver the scaffold and STOP. No lines.
+
+### How to rebuild a video, taught once per rep
+
+Before the user writes, teach the rebuild in plain words. Most beginners think "rebuild" means
+change a few words. It means the opposite: keep the shape, change every word.
+
+- **What you borrow:** the shape. The order of the sections, what each one is for, and how
+  long each runs as a share of the whole. If the source spent 68 percent on the day by day
+  and 10 percent on the close, so do you, within a few points.
+- **What you never borrow:** a sentence. Not one. Your version of each section answers the
+  same question the source's sentences answered, in your words, about your thing.
+- **The bricks you keep:** where the turn lands (usually inside line one or two), where the
+  proof appears on screen, that there is one close and not two. Move these and the video is
+  a different video.
+- **The bricks you switch:** the topic, the number, the example, the proof, the viewer named
+  in line one. These are what make it yours.
+- **The test for each section:** put the source sentence and yours side by side. Same job,
+  different words, your facts. If yours could be pasted into the source video without anyone
+  noticing, you copied. If yours does a different job, you drifted.
+- **A list beats nothing, a list with your opinion beats a list.** If the source is a bare
+  list of steps, your version says why each step matters or where you saw it fail. That is
+  the layer a bigger account can skip and a small one cannot.
+- **Only rebuild what cleared 5x.** Below that you are copying someone's normal Tuesday.
+
+Then ask: which section are you least sure how to fill, and what did you actually do at that
+point in your own story?
 
 ## Stage 3: WRITE (the user's pen, line-by-line grading)
 
@@ -214,6 +275,12 @@ For each line they share, grade it, bluntly:
 - **Facts:** any claim gets checked against its source file. Unverifiable = out.
 - Point at the failing sentence and say why it fails. Offer word-level alternatives only if
   the user asks. Never rewrite a passage wholesale.
+- **Right first, then the miss.** Every grade opens with what the line got right, named
+  specifically, before anything it got wrong. Not praise, a fact: "the number is in, the
+  subject is named". Then the failures. A beginner who only hears misses stops writing.
+- **Two fails on the same line, change tactic.** Do not grade a third typed attempt. Ask them
+  to say it out loud to you as if you were the viewer, badly, then type exactly what they
+  said. Grade that. If it still fails, park the line, move to the next section, and come back.
 
 ## Stage 4: GATE REPORT
 

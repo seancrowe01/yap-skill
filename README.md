@@ -10,15 +10,21 @@ and keeps it off the second.
 
 ## What it does
 
-Seven stages, one rep per chat:
+Seven stages, one rep per chat. The first rep takes about an hour. The fifth takes about
+twenty minutes. A rep that ends at "skip this topic" is a rep done properly.
 
+0. **Setup, first time only.** If your audience map and offer are blank, it interviews you
+   and writes your answers into the files. You do not have to fill in forms alone.
 1. **Topic.** Pulls your outlier data (videos that did several times a channel's normal), flags
    what fits your audience and what does not, and runs the take test with you. No take from
-   you, no video.
-2. **Scaffold.** Pulls the section structure of an analysed source video and lists your
-   receipts, every number checked against its file. No lines.
-3. **Write.** You write, section by section. Claude grades each line against a fixed clarity
-   bar and tells you exactly which sentence fails and why.
+   you, no video. Drop a link to a video that blew up and it gets the transcript and teaches
+   you why it worked before anything else.
+2. **Scaffold.** Pulls the section structure of the source video, lists your receipts with
+   every number checked against its file, and teaches you how to rebuild: keep the shape,
+   change every word. No lines.
+3. **Write.** You write, section by section. Claude asks you three questions before each one,
+   then grades what you type: what the line got right first, then exactly which sentence
+   fails and why. Two fails on one line and it changes tactic instead of grading a third.
 4. **Gate report.** Fourteen pass or fail gates, including a slop check for AI writing
    habits that creep into hand-written lines. Failures block filming.
 5. **Film card.** Prompter, three takes, setup.
@@ -91,8 +97,20 @@ Once connected on your account, the Sandcastles tools show up in Claude Code ses
 credit. The skill asks for your explicit yes on the number before it spends one, every time.
 
 **No Sandcastles?** Paste a list: video link, views, and the channel's normal (median views of
-its last 20 to 30 posts, outliers left out). Claude computes the multiple and judges. For the
-scaffold, paste the source video's transcript with timestamps and Claude sections it.
+its last 20 to 30 posts, outliers left out). Claude computes the multiple and judges.
+
+For transcripts, the skill ships a small script, `scripts/get-transcript.py`. Give it a video
+URL and it downloads the video, transcribes it with timestamps, prints the caption and the
+transcript, and deletes the media. It needs three things on your machine:
+
+```bash
+pip install yt-dlp
+```
+
+ffmpeg (Windows: `winget install ffmpeg`, Mac: `brew install ffmpeg`), and a free Groq API
+key from console.groq.com set as `GROQ_API_KEY` in your environment. Claude runs the script
+for you when you drop a link. If none of that is set up, paste the transcript from any free
+transcription app and Claude sections it by hand.
 
 Rule either way: only a video at 5x or more of its channel's normal can donate structure.
 
@@ -124,6 +142,7 @@ templates/rep-log.md         the log
 templates/edit-checklist.md  your edit order and sound rules
 examples/worked-rep.md       one illustrative rep that got through, invented account
 examples/worked-rep-skipped.md  one that died at the gate, and what she did instead
+scripts/get-transcript.py    video url in, timestamped transcript out, media deleted
 ```
 
 Read the skipped one first. Most reps end there, and that is the skill working.
