@@ -61,11 +61,38 @@ In Claude Code, inside your project:
 Or say "next rep", "rep 4", "let's do a yap". One rep per chat. Open a new chat for the next
 one. Standing context lives in the `yap/` files, not in conversation history.
 
-## Outlier data
+## Outlier data: connect Sandcastles
 
-The skill works best with a content research tool connected over MCP (Sandcastles is one that
-exposes watchlists and analysed video sections). It is optional. Without one, paste a list of
-videos with their views and the channel's usual views, and Claude computes the multiple.
+Stage 1 needs outlier videos, and Stage 2 needs the section structure of one. The skill does
+not scrape Instagram. It gets that data from Sandcastles (sandcastles.ai), a research tool
+that tracks a watchlist of channels, ranks every video against its own channel's normal, and
+holds analysed breakdowns with timestamped sections. With it connected, the skill pulls your
+watchlist itself. Without it, you paste the list by hand (see below).
+
+**You need a paid Sandcastles plan.** The MCP is included on Pro, Visionary and Titan. Starter
+does not have it; upgrade under Settings, Subscription, and the plugin download appears.
+
+**Setup, once, about two minutes.** The full walkthrough with screenshots is at
+https://sandcastles.ai/mcp. In short:
+
+1. In Sandcastles: Settings, Connectors, MCP section, download the plugin zip.
+2. In the Claude desktop app (claude.com/download, the browser chat cannot do this):
+   Customize, Plugins, Add, Upload Plugin, drop the zip in. Then press Connectors on the
+   Plugins page and Install. Click Add on the connector window. It can look like nothing
+   happened. It did.
+3. Connectors in the left nav, find Sandcastles, click Connect, log in once in the tab that
+   opens. If no tab opens it is a pop-up blocker.
+4. Set the tool permissions to Always allow, or Claude stops to ask mid-rep.
+5. Ask Claude for the top videos on your watchlist. Real data back means it worked.
+
+Once connected on your account, the Sandcastles tools show up in Claude Code sessions too.
+
+**Credits.** Reading your watchlist is free. Running a deep analysis on a video spends a
+credit. The skill asks for your explicit yes on the number before it spends one, every time.
+
+**No Sandcastles?** Paste a list: video link, views, and the channel's normal (median views of
+its last 20 to 30 posts, outliers left out). Claude computes the multiple and judges. For the
+scaffold, paste the source video's transcript with timestamps and Claude sections it.
 
 Rule either way: only a video at 5x or more of its channel's normal can donate structure.
 

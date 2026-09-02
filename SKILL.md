@@ -44,9 +44,13 @@ the matching template in this skill's `templates/` folder.
 Topics come from outlier videos: videos that did several times the channel's normal. Two ways
 to get them, in order of preference:
 
-1. **A research tool with an MCP connection** (for example Sandcastles). Reads are usually
-   free; any call that spends a credit needs the user's explicit yes on the number, every time.
-   Verify you are in the right workspace before reading.
+1. **Sandcastles over MCP** (sandcastles.ai, paid plan: Pro, Visionary or Titan). If its tools
+   are present in the session, use them: watchlist search sorted by outlier score, 90 days,
+   and video details for analysed sections. Reads are free; `analyze_video` spends a credit
+   and needs the user's explicit yes on the number, every time. Sandcastles has workspaces
+   and the active one follows the user's browser, so list workspaces and confirm the right
+   one before any read. If the tools are not present, tell the user the README has the setup
+   steps, then fall back to manual.
 2. **Manual.** The user pastes a list: video link, views, and the channel's normal. Claude
    computes the multiple. No multiple, no topic.
 
