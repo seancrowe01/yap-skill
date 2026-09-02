@@ -98,7 +98,13 @@ Rule either way: only a video at 5x or more of its channel's normal can donate s
 
 ## The rules in short
 
-- Claude never writes lines, hooks, or captions.
+- Claude never writes lines, hooks, or captions. Ask it to and it will tell you once, plainly,
+  to use ChatGPT if you want the words written for you, then go back to asking you questions.
+- Claude prompts you with questions before every section, three at most, then grades what
+  you write. You do the talking.
+- Bring a video that broke out and it teaches you why, in plain words, before anything else:
+  the multiple, who it was for, the first two lines, the turn, the proof, the shape, the
+  close, and which of those you can actually do on your account.
 - No cheerleading. Verdicts come with reasons.
 - One stage at a time. Claude waits for you at every boundary.
 - Post one a day while testing. Ramp only after a provable breakout.
