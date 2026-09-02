@@ -151,7 +151,10 @@ to what they actually have.
      transcription app, plus the view count and the channel's normal.
 
    Work only from what is in front of you (transcript, caption, numbers the user gives); mark
-   anything you cannot see as [GAP]. Cover, in this order, in plain words:
+   anything you cannot see as [GAP]. Call the creator by the account name printed in the
+   transcript header or given by the user, and when a second video comes in, drop the first
+   creator's name entirely. Two sources in one rep is where names get crossed. Cover, in this
+   order, in plain words:
    - **The multiple.** Views against the channel's normal. Below 5x, say it is the channel's
      normal and there is nothing to learn from it beyond the topic.
    - **Who it was for.** The one viewer the first line names, and how many of 100 in that
